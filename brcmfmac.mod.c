@@ -1,0 +1,308 @@
+#include <linux/module.h>
+#define INCLUDE_VERMAGIC
+#include <linux/build-salt.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+BUILD_SALT;
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+MODULE_INFO(name, KBUILD_MODNAME);
+
+__visible struct module __this_module
+__section(".gnu.linkonce.this_module") = {
+	.name = KBUILD_MODNAME,
+	.init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+	.exit = cleanup_module,
+#endif
+	.arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+#ifdef CONFIG_RETPOLINE
+MODULE_INFO(retpoline, "Y");
+#endif
+
+static const struct modversion_info ____versions[]
+__used __section("__versions") = {
+	{ 0xfb2d591e, "module_layout" },
+	{ 0x96853a65, "register_netdevice" },
+	{ 0x6e8c8fa2, "sdio_writeb" },
+	{ 0x3cc90262, "sdio_readb" },
+	{ 0x2d3385d3, "system_wq" },
+	{ 0xd6217d91, "brcmu_d11_attach" },
+	{ 0xa70f8536, "kmalloc_caches" },
+	{ 0xeb233a45, "__kmalloc" },
+	{ 0x50877b9, "dmi_first_match" },
+	{ 0xc4f0da12, "ktime_get_with_offset" },
+	{ 0xf9a482f9, "msleep" },
+	{ 0xf888ca21, "sg_init_table" },
+	{ 0xc53d21d3, "of_property_read_string_helper" },
+	{ 0xb3d9e035, "wiphy_free" },
+	{ 0x7410aba2, "strreplace" },
+	{ 0xa2b1172a, "cfg80211_connect_done" },
+	{ 0xb5b54b34, "_raw_spin_unlock" },
+	{ 0x349cba85, "strchr" },
+	{ 0xf1f7e956, "of_find_node_opts_by_path" },
+	{ 0xbad80326, "param_ops_int" },
+	{ 0x98cf60b3, "strlen" },
+	{ 0x7b96cec2, "device_release_driver" },
+	{ 0xae33ea60, "irq_of_parse_and_map" },
+	{ 0xea124bd1, "gcd" },
+	{ 0x27bbf221, "disable_irq_nosync" },
+	{ 0xf77dc5b5, "cfg80211_inform_bss_data" },
+	{ 0xf68285c0, "register_inetaddr_notifier" },
+	{ 0x1906648e, "brcmu_boardrev_str" },
+	{ 0x1f2be91e, "send_sig" },
+	{ 0xf5596d89, "cfg80211_get_p2p_attr" },
+	{ 0x79aa04a2, "get_random_bytes" },
+	{ 0x37110088, "remove_wait_queue" },
+	{ 0x27b77753, "sdio_enable_func" },
+	{ 0xc7a4fbed, "rtnl_lock" },
+	{ 0xe62928a8, "cfg80211_report_wowlan_wakeup" },
+	{ 0x22676e60, "sdio_claim_irq" },
+	{ 0xfb2934, "no_llseek" },
+	{ 0x486a80be, "sdio_retune_release" },
+	{ 0xaecb0943, "mmc_hw_reset" },
+	{ 0x8f680b5c, "brcmu_pkt_buf_get_skb" },
+	{ 0xee55cdd4, "netif_carrier_on" },
+	{ 0xc3690fc, "_raw_spin_lock_bh" },
+	{ 0xc1b99792, "ieee80211_channel_to_freq_khz" },
+	{ 0xd36dc10c, "get_random_u32" },
+	{ 0x2c4f3dd3, "seq_printf" },
+	{ 0x2e137b0f, "netif_carrier_off" },
+	{ 0x56470118, "__warn_printk" },
+	{ 0x3c12dfe, "cancel_work_sync" },
+	{ 0xe17f50dc, "usb_kill_urb" },
+	{ 0x60352082, "register_inet6addr_notifier" },
+	{ 0xbade47a9, "seq_write" },
+	{ 0x66b4cc41, "kmemdup" },
+	{ 0x87b8798d, "sg_next" },
+	{ 0xc310b981, "strnstr" },
+	{ 0x1c0a3b48, "driver_for_each_device" },
+	{ 0x82fdd3fe, "__dev_kfree_skb_any" },
+	{ 0xeae3dfd6, "__const_udelay" },
+	{ 0xc6f46339, "init_timer_key" },
+	{ 0x6d836394, "brcmu_pktq_pdeq_tail" },
+	{ 0x409bcb62, "mutex_unlock" },
+	{ 0x974dc40d, "usb_autopm_get_interface" },
+	{ 0x85df9b6c, "strsep" },
+	{ 0x7cd165c9, "of_device_is_compatible" },
+	{ 0x6106798d, "__platform_driver_probe" },
+	{ 0x999e8297, "vfree" },
+	{ 0x7d4e9643, "pm_runtime_allow" },
+	{ 0xf88d5ad2, "brcmu_pktq_penq" },
+	{ 0x10e1a628, "cfg80211_unregister_wdev" },
+	{ 0xd287b5c4, "brcmu_pktq_mdeq" },
+	{ 0x415b279a, "debugfs_create_file" },
+	{ 0xa511ef18, "pm_runtime_forbid" },
+	{ 0xdd64e639, "strscpy" },
+	{ 0x3c3ff9fd, "sprintf" },
+	{ 0x11acd086, "kthread_create_on_node" },
+	{ 0x15ba50a6, "jiffies" },
+	{ 0x5900767f, "skb_unlink" },
+	{ 0xe10aa6f3, "skb_trim" },
+	{ 0xe2d5255a, "strcmp" },
+	{ 0x37e9b7ff, "cfg80211_mgmt_tx_status" },
+	{ 0x3b80d137, "param_ops_string" },
+	{ 0xce2840e7, "irq_set_irq_wake" },
+	{ 0xa7b744a6, "__netdev_alloc_skb" },
+	{ 0xfa9e2a62, "netif_rx" },
+	{ 0xfc24d863, "__pskb_pull_tail" },
+	{ 0xd9a5ea54, "__init_waitqueue_head" },
+	{ 0xaad8c7d6, "default_wake_function" },
+	{ 0xc143bb6c, "mmc_wait_for_req" },
+	{ 0x73cbe7de, "debugfs_create_u32" },
+	{ 0x2fe252cc, "unregister_inet6addr_notifier" },
+	{ 0x25974000, "wait_for_completion" },
+	{ 0xf9c0b663, "strlcat" },
+	{ 0xb5a1036a, "sdio_writel" },
+	{ 0x97934ecf, "del_timer_sync" },
+	{ 0x2906b4c5, "cfg80211_vendor_cmd_reply" },
+	{ 0x8278e404, "brcmu_pktq_pdeq_match" },
+	{ 0x1f71a60, "_dev_warn" },
+	{ 0xdcb764ad, "memset" },
+	{ 0xaa6d857, "netif_rx_ni" },
+	{ 0x6bedf402, "ieee80211_freq_khz_to_channel" },
+	{ 0x35f19b98, "netif_tx_wake_queue" },
+	{ 0x11089ac7, "_ctype" },
+	{ 0xd35cce70, "_raw_spin_unlock_irqrestore" },
+	{ 0x37befc70, "jiffies_to_msecs" },
+	{ 0xc587a1e9, "usb_deregister" },
+	{ 0x977f511b, "__mutex_init" },
+	{ 0xf5d1246, "dev_coredumpv" },
+	{ 0xc5850110, "printk" },
+	{ 0xb6a4d1e9, "kthread_stop" },
+	{ 0x449ad0a7, "memcmp" },
+	{ 0x15977e92, "of_find_property" },
+	{ 0x762addc1, "wiphy_read_of_freq_limits" },
+	{ 0x2e3bcce2, "wait_for_completion_interruptible" },
+	{ 0x3731e741, "efivar_entry_size" },
+	{ 0x272a89c2, "free_netdev" },
+	{ 0xf72c9901, "wiphy_unregister" },
+	{ 0x9166fada, "strncpy" },
+	{ 0x304a4555, "register_netdev" },
+	{ 0x127719a6, "nla_put" },
+	{ 0x870ce698, "mmc_set_data_timeout" },
+	{ 0x1c7227e6, "sdio_readl" },
+	{ 0xdb658a07, "cfg80211_del_sta_sinfo" },
+	{ 0x5a921311, "strncmp" },
+	{ 0x5792f848, "strlcpy" },
+	{ 0x78f5bede, "brcmu_pktq_peek_tail" },
+	{ 0x48fd27a9, "brcmu_pktq_flush" },
+	{ 0x20186d59, "sdio_retune_crc_enable" },
+	{ 0xe5c2ebed, "cfg80211_rx_mgmt_khz" },
+	{ 0x842d07b3, "skb_push" },
+	{ 0x2ab7989d, "mutex_lock" },
+	{ 0x8c03d20c, "destroy_workqueue" },
+	{ 0x82ebcd5d, "cfg80211_michael_mic_failure" },
+	{ 0x8d189252, "wiphy_apply_custom_regulatory" },
+	{ 0x7c950af6, "irq_get_irq_data" },
+	{ 0xc38c83b8, "mod_timer" },
+	{ 0x24d273d1, "add_timer" },
+	{ 0xfda9581f, "prandom_u32" },
+	{ 0x92d5838e, "request_threaded_irq" },
+	{ 0xcd86b50e, "skb_pull" },
+	{ 0xb380947, "simple_open" },
+	{ 0xfaaf9302, "request_firmware_nowait" },
+	{ 0x54251da1, "cfg80211_ibss_joined" },
+	{ 0x20794e2c, "_dev_err" },
+	{ 0xfe487975, "init_wait_entry" },
+	{ 0x9dbcd801, "brcmu_dbg_hex_dump" },
+	{ 0x3e79563e, "sdio_readsb" },
+	{ 0xd7bcd4a1, "sdio_unregister_driver" },
+	{ 0x3a2f6702, "sg_alloc_table" },
+	{ 0x9e55773b, "sdio_f0_writeb" },
+	{ 0x62af7f5e, "cfg80211_check_combinations" },
+	{ 0x6e0da26f, "ieee80211_get_channel_khz" },
+	{ 0x1d4a5d09, "skb_queue_tail" },
+	{ 0x9f984513, "strrchr" },
+	{ 0x494fc7da, "usb_submit_urb" },
+	{ 0x40a9b349, "vzalloc" },
+	{ 0x948246b8, "cfg80211_roamed" },
+	{ 0xf0b1beb1, "cfg80211_put_bss" },
+	{ 0xfe029963, "unregister_inetaddr_notifier" },
+	{ 0xa916b694, "strnlen" },
+	{ 0x12a38747, "usleep_range" },
+	{ 0x7947b81e, "__cfg80211_alloc_reply_skb" },
+	{ 0xed409304, "wiphy_register" },
+	{ 0xd9de8f65, "cfg80211_crit_proto_stopped" },
+	{ 0xe46021ca, "_raw_spin_unlock_bh" },
+	{ 0xa74ee183, "debugfs_create_devm_seqfile" },
+	{ 0xd2fa4a6f, "sdio_release_irq" },
+	{ 0x9f49dcc4, "__stack_chk_fail" },
+	{ 0xb2c78758, "cfg80211_classify8021d" },
+	{ 0x4ea7b7ae, "efivar_entry_get" },
+	{ 0x8ddd8aad, "schedule_timeout" },
+	{ 0xb8b9f817, "kmalloc_order_trace" },
+	{ 0x90598cfb, "kfree_skb" },
+	{ 0xa01c8482, "cfg80211_ready_on_channel" },
+	{ 0xb3e1d3b0, "wiphy_new_nm" },
+	{ 0xf78f4818, "alloc_netdev_mqs" },
+	{ 0x4d02653d, "eth_type_trans" },
+	{ 0xdf256037, "kstrtou8_from_user" },
+	{ 0xa08257c5, "sdio_f0_readb" },
+	{ 0xce8c85a4, "cpu_hwcap_keys" },
+	{ 0x42b67c15, "wake_up_process" },
+	{ 0x63bbac8d, "pskb_expand_head" },
+	{ 0x3f2e5cc5, "ether_setup" },
+	{ 0x8af0b31c, "cfg80211_disconnected" },
+	{ 0xa17c0ccf, "brcmu_dotrev_str" },
+	{ 0x39944e52, "kmem_cache_alloc_trace" },
+	{ 0xba8fbd64, "_raw_spin_lock" },
+	{ 0x34db050b, "_raw_spin_lock_irqsave" },
+	{ 0x82ed085e, "unregister_netdevice_queue" },
+	{ 0x6202b832, "cfg80211_new_sta" },
+	{ 0x3eeb2322, "__wake_up" },
+	{ 0xb3f7646e, "kthread_should_stop" },
+	{ 0x9dd45ea9, "sdio_memcpy_toio" },
+	{ 0x8c26d495, "prepare_to_wait_event" },
+	{ 0x5fd0b65d, "brcmu_pktq_penq_head" },
+	{ 0xe105bf22, "brcmu_pktq_init" },
+	{ 0x7d29564c, "cfg80211_port_authorized" },
+	{ 0x4afb2238, "add_wait_queue" },
+	{ 0xfcec0987, "enable_irq" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x4829a47e, "memcpy" },
+	{ 0x6df1aaf1, "kernel_sigaction" },
+	{ 0x96848186, "scnprintf" },
+	{ 0xe1e036a, "usb_register_driver" },
+	{ 0x3c1b2f0c, "request_firmware" },
+	{ 0x92540fbf, "finish_wait" },
+	{ 0x608741b5, "__init_swait_queue_head" },
+	{ 0x602d7731, "cfg80211_remain_on_channel_expired" },
+	{ 0x5c482b01, "unregister_netdev" },
+	{ 0x7f5b4fe4, "sg_free_table" },
+	{ 0xc5b6f236, "queue_work_on" },
+	{ 0xa6257a2f, "complete" },
+	{ 0x656e4a6e, "snprintf" },
+	{ 0x5a9f1d63, "memmove" },
+	{ 0x39971ef0, "sdio_register_driver" },
+	{ 0xfb3b2d80, "consume_skb" },
+	{ 0xaf433a1e, "sdio_memcpy_fromio" },
+	{ 0x6ebe366f, "ktime_get_mono_fast_ns" },
+	{ 0xc928fd35, "cfg80211_sched_scan_stopped" },
+	{ 0x4c2a7bf7, "sdio_claim_host" },
+	{ 0x788f48e1, "platform_driver_unregister" },
+	{ 0x533283a0, "firmware_request_nowarn" },
+	{ 0x7f02188f, "__msecs_to_jiffies" },
+	{ 0x2df8b0c4, "cfg80211_scan_done" },
+	{ 0x1f02cedf, "sdio_retune_crc_disable" },
+	{ 0x1857f6ff, "of_property_read_variable_u32_array" },
+	{ 0xe202b429, "brcmu_pkt_buf_free_skb" },
+	{ 0x68a50d02, "skb_put" },
+	{ 0x5cba3f70, "of_node_put" },
+	{ 0xdc66de14, "devm_kmalloc" },
+	{ 0x4a3ad70e, "wait_for_completion_timeout" },
+	{ 0x14b89635, "arm64_const_caps_ready" },
+	{ 0xb1240e61, "usb_free_urb" },
+	{ 0xdf9208c0, "alloc_workqueue" },
+	{ 0xab6c126d, "sdio_set_block_size" },
+	{ 0xc6d09aa9, "release_firmware" },
+	{ 0x6e720ff2, "rtnl_unlock" },
+	{ 0x6933300d, "usb_autopm_put_interface" },
+	{ 0x1912bfff, "sdio_disable_func" },
+	{ 0xaba2ba3e, "usb_alloc_urb" },
+	{ 0xc1514a3b, "free_irq" },
+	{ 0x64384401, "sdio_release_host" },
+	{ 0x212b0039, "sdio_retune_hold_now" },
+	{ 0xcd136164, "cfg80211_sched_scan_results" },
+	{ 0xe7171741, "brcmu_pktq_mlen" },
+	{ 0x81e6b37f, "dmi_get_system_info" },
+};
+
+MODULE_INFO(depends, "brcmutil,cfg80211");
+
+MODULE_ALIAS("sdio:c*v02D0dA887*");
+MODULE_ALIAS("sdio:c*v02D0d4324*");
+MODULE_ALIAS("sdio:c*v02D0d4329*");
+MODULE_ALIAS("sdio:c*v02D0d4330*");
+MODULE_ALIAS("sdio:c*v02D0d4334*");
+MODULE_ALIAS("sdio:c*v02D0dA94C*");
+MODULE_ALIAS("sdio:c*v02D0dA94D*");
+MODULE_ALIAS("sdio:c*v02D0dA962*");
+MODULE_ALIAS("sdio:c*v02D0dA9A4*");
+MODULE_ALIAS("sdio:c*v02D0d4335*");
+MODULE_ALIAS("sdio:c*v02D0d4339*");
+MODULE_ALIAS("sdio:c*v02D0dA9A6*");
+MODULE_ALIAS("sdio:c*v02D0d4345*");
+MODULE_ALIAS("sdio:c*v02D0dA9BF*");
+MODULE_ALIAS("sdio:c*v02D0d4354*");
+MODULE_ALIAS("sdio:c*v02D0d4356*");
+MODULE_ALIAS("sdio:c*v02D0d4359*");
+MODULE_ALIAS("sdio:c*v02D0d4373*");
+MODULE_ALIAS("sdio:c*v02D0dA804*");
+MODULE_ALIAS("sdio:c*v02D0d4355*");
+MODULE_ALIAS("usb:v0A5CpBD1Ed*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v0A5CpBD17d*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v0A5CpBD1Fd*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v0A5CpBD27d*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v13B1p0039d*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v04B4pBD29d*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v043Ep3101d*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v0A5Cp0BDCd*dc*dsc*dp*ic*isc*ip*in*");
+MODULE_ALIAS("usb:v04B4p0BDCd*dc*dsc*dp*ic*isc*ip*in*");
+
+MODULE_INFO(srcversion, "E5808FEB6D9857472FAE2C8");
